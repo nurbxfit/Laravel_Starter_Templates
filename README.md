@@ -16,13 +16,13 @@ so I created this template that is configured with basic features a that can act
 
 ## preconfigured:
 1. auth: for login/register (done)
-2. passport : for api authentication
+2. passport : for api authentication (done)
 3. email driver for account verification
 4. Basic CRUD example
 5. Basic File upload example
 
 ### custom middleware:
-1. CORS: for api
+1. CORS: for api (done)
   
 
 #### : admin Authentication guards
@@ -43,3 +43,9 @@ so I created this template that is configured with basic features a that can act
 6. add ' Passport::routes() ' to app/AuthServiceProvider.
 7. change 'api' driver in config/auth.php from 'token' to 'passport';
 8. reference links: [Laravel Passport](https://laravel.com/docs/5.8/passport)
+
+
+#### : Email Verified
+1. reference link: [Laravel Email Verification](https://appdividend.com/2018/09/11/laravel-5-7-email-verification-tutorial-example/)
+2. most of the reference already preconfigured, you just go to mailtrap and fill in the .env file with your mail configuration.
+3. add the middleware 'verified' to routes or controller you want only a verified users can access.

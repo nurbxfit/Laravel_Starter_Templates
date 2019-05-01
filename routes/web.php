@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Auth::routes();
+//Auth::routes(); //default
+Auth::routes(['verify' => true]); //emailverification 
 
 Route::get('/home', 'HomeController@index')->name('user.dashboard');
 Route::get('/info',function(){

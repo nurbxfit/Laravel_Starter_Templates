@@ -13,6 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
+        //$this->middleware(['auth','verified']); //only verified users can use this controller
         $this->middleware('auth');
     }
 
