@@ -42,3 +42,4 @@ so I created this template that is configured with basic features a that can act
 5. add ' Laravel\Passport\HasApiTokens ' to App\User model.
 6. add ' Passport::routes() ' to app/AuthServiceProvider.
 7. change 'api' driver in config/auth.php from 'token' to 'passport';
+8. reference links: [Laravel Passport] (https://laravel.com/docs/5.8/passport)
