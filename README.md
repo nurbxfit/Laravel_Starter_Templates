@@ -10,9 +10,9 @@ so I created this template that is configured with basic features a that can act
 4. npm install.
 5. cp .env.example .env
 6. php artisan key:generate
-7. php artisan passport:install
-8. change content of .env file to match your database configuration
-9. php artisan migrate.
+7. change content of .env file to match your database configuration
+8. php artisan migrate.
+9. php artisan passport:install
 
 ## preconfigured:
 1. auth: for login/register (done)
@@ -37,8 +37,8 @@ so I created this template that is configured with basic features a that can act
 #### : Laravel Passport (How to Install)
 1. composer require laravel/passport
 2. php artisan make:auth
-3. php artisan passport:install
-4. php artisan migrate
+3. php artisan migrate 
+4. php artisan passport:install
 5. add ' Laravel\Passport\HasApiTokens ' to App\User model.
 6. add ' Passport::routes() ' to app/AuthServiceProvider.
-7. change 'api' driver in AuthServiceProvider from 'token' to 'passport';
+7. change 'api' driver in config/auth.php from 'token' to 'passport';
