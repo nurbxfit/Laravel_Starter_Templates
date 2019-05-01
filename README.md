@@ -48,4 +48,4 @@ so I created this template that is configured with basic features a that can act
 #### : Email Verified
 1. reference link: [Laravel Email Verification](https://appdividend.com/2018/09/11/laravel-5-7-email-verification-tutorial-example/)
 2. most of the reference already preconfigured, you just go to mailtrap and fill in the .env file with your mail configuration.
-3. add the middleware 'verified' to routes or controller you want only a verified users can access.
+3. add the middleware 'verified' to routes or controllers you want only a verified users can access.
